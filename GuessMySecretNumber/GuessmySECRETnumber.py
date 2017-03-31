@@ -4,7 +4,7 @@ import os, sys #utf-8
 a = "č, ž, š"
 print "To je le test: " + a
 
-print "Welcome! It is nice to see you! Let\'s play and have fun!"
+print "Welcome! It is nice to see you! Let\'s play a game and have fun!"
 name = raw_input("But first, what is your name?")
 print "Hello, %s!" % name
 print "Let's play GUESS MY SECRET NUMBER!"
@@ -36,5 +36,3 @@ while True:
             break
         else:
             print "Input numbers 1 or 2 only"
-
-
