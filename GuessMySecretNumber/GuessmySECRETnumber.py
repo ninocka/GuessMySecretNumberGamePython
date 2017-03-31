@@ -1,15 +1,14 @@
 # This Python file uses the following encoding: utf-8
-import os, sys #utf-8
 #TEST za čžš
+import random
 a = "č, ž, š"
 print "To je le test: " + a
 
-print "Welcome! It is nice to see you! Let\'s play a game and have fun!"
+print "Welcome! It is nice to see you! Let\'s play and have fun!"
 name = raw_input("But first, what is your name?")
 print "Hello, %s!" % name
 print "Let's play GUESS MY SECRET NUMBER!"
 def play(): #saving play for reuse
-    import random
     number = random.randrange (1,10)
     guess = ""
     attempt = 0
@@ -19,6 +18,8 @@ def play(): #saving play for reuse
         attempt = attempt + 1
         if guess < number:
             print "Sorry this is not the correct answer - try again! Little higher."
+        elif guess > 10:
+            print "ONLY NUMBERS between 1 and 10 please!"
         elif guess > number:
             print "Sorry this is not the correct answer  - try again! Little lower."
         else: #guess == number
@@ -36,3 +37,4 @@ while True:
             break
         else:
             print "Input numbers 1 or 2 only"
+
