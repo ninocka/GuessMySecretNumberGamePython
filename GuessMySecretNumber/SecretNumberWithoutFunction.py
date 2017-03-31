@@ -34,8 +34,7 @@ while True:
                             print "Sorry this is not the correct answer  - try again! Little lower."
                         else:  # guess == number
                             print "Mindreader! You have entered the correct number!! That took you %d attempts. Let\'s play again!" % attempt
-                            answer = input(
-                                "Do you want to play? Please, write number 1 to play or number 2 to exit ")
+                            answer = raw_input("Do you want to play? Please, write number 1 to play or number 2 to exit ")
                     except ValueError:
                         print "ONLY NUMBERS between 1 and 10 please!"
             elif answer == 2:
@@ -46,8 +45,3 @@ while True:
             break
     except ValueError:
             print "ONLY NUMBERS between 1 and 10 please!"
-
-while True:
-        answer = raw_input("Do you want to play? Please, write number 1 to play or number 2 to exit ")
-
-
