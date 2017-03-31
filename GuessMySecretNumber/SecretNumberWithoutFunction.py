@@ -16,7 +16,9 @@ while True:
     try:
         guess = int(raw_input("Please enter the number between 1 and 10: "))
         attempt = attempt + 1
-        if guess < number:
+        if guess < 1:
+            print "ONLY NUMBERS between 1 and 10 please!"
+        elif guess < number:
             print "Sorry this is not the correct answer - try again! Little higher."
         elif guess > 10:
             print "ONLY NUMBERS between 1 and 10 please!"
@@ -30,7 +32,9 @@ while True:
                     try:
                         guess = int(raw_input("Please enter the number between 1 and 10: "))
                         attempt = attempt + 1
-                        if guess < number:
+                        if guess < 1:
+                            print "ONLY NUMBERS between 1 and 10 please!"
+                        elif guess < number:
                             print "Sorry this is not the correct answer - try again! Little higher."
                         elif guess > 10:
                             print "ONLY NUMBERS between 1 and 10 please!"
@@ -38,7 +42,6 @@ while True:
                             print "Sorry this is not the correct answer  - try again! Little lower."
                         else:  # guess == number
                             print "Mindreader! You have entered the correct number!! That took you %d attempts. Let\'s play again!" % attempt
-                            answer = raw_input("Do you want to play? Please, write number 1 to play or number 2 to exit ")
                             attempt = 0
                             attempt = attempt + 1
                     except ValueError:

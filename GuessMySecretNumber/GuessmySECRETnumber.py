@@ -16,7 +16,9 @@ def play(): #saving play for reuse
      try:
         guess = int(raw_input("Please enter the number between 1 and 10: "))
         attempt = attempt + 1
-        if guess < number:
+        if guess < 1:
+            print "ONLY NUMBERS between 1 and 10 please!"
+        elif guess < number:
             print "Sorry this is not the correct answer - try again! Little higher."
         elif guess > 10:
             print "ONLY NUMBERS between 1 and 10 please!"
