@@ -18,6 +18,8 @@ while True:
         attempt = attempt + 1
         if guess < number:
             print "Sorry this is not the correct answer - try again! Little higher."
+        elif guess > 10:
+            print "ONLY NUMBERS between 1 and 10 please!"
         elif guess > number:
             print "Sorry this is not the correct answer  - try again! Little lower."
         else: #guess == number
@@ -30,6 +32,8 @@ while True:
                         attempt = attempt + 1
                         if guess < number:
                             print "Sorry this is not the correct answer - try again! Little higher."
+                        elif guess > 10:
+                            print "ONLY NUMBERS between 1 and 10 please!"
                         elif guess > number:
                             print "Sorry this is not the correct answer  - try again! Little lower."
                         else:  # guess == number
